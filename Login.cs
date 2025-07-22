@@ -25,12 +25,12 @@ namespace InventoryManagement
         {
             if(txtname.Text=="ahmed" && txtpass.Text == "123")
             {
-                main.btnhome.Enabled = false;
-                main.btnproducts.Enabled = false;
-                main.btnsuppliers.Enabled = false;
-                main.btncustomers.Enabled = false;
-                main.btntransactions.Enabled = false;
-                main.btnreports.Enabled = false;
+                main.btnhome.Enabled = true;
+                main.btnproducts.Enabled = true;
+                main.btnsuppliers.Enabled = true;
+                main.btncustomers.Enabled = true;
+                main.btntransactions.Enabled = true;
+                main.btnreports.Enabled = true;
                 main.panelhome.Controls.Clear();
                 Home_UC h = new Home_UC();
                 h.Dock = DockStyle.Fill;

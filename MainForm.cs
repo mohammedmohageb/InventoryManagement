@@ -21,14 +21,14 @@ namespace InventoryManagement
         private void btnhome_Click(object sender, EventArgs e)
         {
             panelhome.Controls.Clear();
-            Home_UC h = new Home_UC();
-            h.Dock = DockStyle.Fill;
-            panelhome.Controls.Add(h);
+            Home_UC home_uc = new Home_UC();
+            home_uc.Dock = DockStyle.Fill;
+            panelhome.Controls.Add(home_uc);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            btnhome.Enabled = false;
+           /* btnhome.Enabled = false;
             btnproducts.Enabled = false;
             btnsuppliers.Enabled = false;
             btncustomers.Enabled = false;
@@ -36,7 +36,15 @@ namespace InventoryManagement
             btnreports.Enabled = false;
             this.Show();
             Login log = new Login(this);
-            log.ShowDialog();
+            log.ShowDialog();*/
+        }
+
+        private void btnproducts_Click(object sender, EventArgs e)
+        {
+            panelhome.Controls.Clear();
+            Products_UC products_us = new Products_UC();
+            products_us.Dock = DockStyle.Fill;
+            panelhome.Controls.Add(products_us);
         }
     }
 }

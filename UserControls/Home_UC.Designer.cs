@@ -127,6 +127,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Home_UC";
             this.Size = new System.Drawing.Size(1011, 646);
+            this.Load += new System.EventHandler(this.Home_UC_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();

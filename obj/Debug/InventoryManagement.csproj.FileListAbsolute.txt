@@ -9,3 +9,4 @@ C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\Invento
 C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.pdb
 C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.UserControls.Home_UC.resources
 C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Login.resources
+C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.UserControls.Products_UC.resources

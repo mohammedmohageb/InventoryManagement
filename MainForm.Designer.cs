@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panelbtn = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnreports = new System.Windows.Forms.Button();
             this.btntransactions = new System.Windows.Forms.Button();
             this.btnproducts = new System.Windows.Forms.Button();
@@ -36,12 +42,6 @@
             this.btncustomers = new System.Windows.Forms.Button();
             this.btnhome = new System.Windows.Forms.Button();
             this.panelhome = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelbtn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -72,84 +72,6 @@
             this.panelbtn.Name = "panelbtn";
             this.panelbtn.Size = new System.Drawing.Size(196, 644);
             this.panelbtn.TabIndex = 0;
-            // 
-            // btnreports
-            // 
-            this.btnreports.BackColor = System.Drawing.SystemColors.Menu;
-            this.btnreports.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnreports.Location = new System.Drawing.Point(55, 410);
-            this.btnreports.Name = "btnreports";
-            this.btnreports.Size = new System.Drawing.Size(136, 49);
-            this.btnreports.TabIndex = 6;
-            this.btnreports.Text = "Reports";
-            this.btnreports.UseVisualStyleBackColor = false;
-            // 
-            // btntransactions
-            // 
-            this.btntransactions.BackColor = System.Drawing.SystemColors.Menu;
-            this.btntransactions.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntransactions.Location = new System.Drawing.Point(55, 335);
-            this.btntransactions.Name = "btntransactions";
-            this.btntransactions.Size = new System.Drawing.Size(136, 49);
-            this.btntransactions.TabIndex = 5;
-            this.btntransactions.Text = "Transactions";
-            this.btntransactions.UseVisualStyleBackColor = false;
-            // 
-            // btnproducts
-            // 
-            this.btnproducts.BackColor = System.Drawing.SystemColors.Menu;
-            this.btnproducts.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnproducts.Location = new System.Drawing.Point(55, 114);
-            this.btnproducts.Name = "btnproducts";
-            this.btnproducts.Size = new System.Drawing.Size(136, 49);
-            this.btnproducts.TabIndex = 4;
-            this.btnproducts.Text = "Products";
-            this.btnproducts.UseVisualStyleBackColor = false;
-            // 
-            // btnsuppliers
-            // 
-            this.btnsuppliers.BackColor = System.Drawing.SystemColors.Menu;
-            this.btnsuppliers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsuppliers.Location = new System.Drawing.Point(55, 187);
-            this.btnsuppliers.Name = "btnsuppliers";
-            this.btnsuppliers.Size = new System.Drawing.Size(136, 49);
-            this.btnsuppliers.TabIndex = 3;
-            this.btnsuppliers.Text = "Suppliers";
-            this.btnsuppliers.UseVisualStyleBackColor = false;
-            // 
-            // btncustomers
-            // 
-            this.btncustomers.BackColor = System.Drawing.SystemColors.Menu;
-            this.btncustomers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncustomers.Location = new System.Drawing.Point(55, 259);
-            this.btncustomers.Name = "btncustomers";
-            this.btncustomers.Size = new System.Drawing.Size(136, 49);
-            this.btncustomers.TabIndex = 2;
-            this.btncustomers.Text = "Customers";
-            this.btncustomers.UseVisualStyleBackColor = false;
-            // 
-            // btnhome
-            // 
-            this.btnhome.BackColor = System.Drawing.SystemColors.Menu;
-            this.btnhome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnhome.Location = new System.Drawing.Point(55, 43);
-            this.btnhome.Name = "btnhome";
-            this.btnhome.Size = new System.Drawing.Size(136, 49);
-            this.btnhome.TabIndex = 1;
-            this.btnhome.Text = "Home";
-            this.btnhome.UseVisualStyleBackColor = false;
-            this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
-            // 
-            // panelhome
-            // 
-            this.panelhome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelhome.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panelhome.Location = new System.Drawing.Point(198, 0);
-            this.panelhome.Name = "panelhome";
-            this.panelhome.Size = new System.Drawing.Size(1011, 646);
-            this.panelhome.TabIndex = 1;
             // 
             // pictureBox6
             // 
@@ -211,6 +133,85 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnreports
+            // 
+            this.btnreports.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnreports.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreports.Location = new System.Drawing.Point(55, 410);
+            this.btnreports.Name = "btnreports";
+            this.btnreports.Size = new System.Drawing.Size(136, 49);
+            this.btnreports.TabIndex = 6;
+            this.btnreports.Text = "Reports";
+            this.btnreports.UseVisualStyleBackColor = false;
+            // 
+            // btntransactions
+            // 
+            this.btntransactions.BackColor = System.Drawing.SystemColors.Menu;
+            this.btntransactions.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntransactions.Location = new System.Drawing.Point(55, 335);
+            this.btntransactions.Name = "btntransactions";
+            this.btntransactions.Size = new System.Drawing.Size(136, 49);
+            this.btntransactions.TabIndex = 5;
+            this.btntransactions.Text = "Transactions";
+            this.btntransactions.UseVisualStyleBackColor = false;
+            // 
+            // btnproducts
+            // 
+            this.btnproducts.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnproducts.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnproducts.Location = new System.Drawing.Point(55, 114);
+            this.btnproducts.Name = "btnproducts";
+            this.btnproducts.Size = new System.Drawing.Size(136, 49);
+            this.btnproducts.TabIndex = 2;
+            this.btnproducts.Text = "Products";
+            this.btnproducts.UseVisualStyleBackColor = false;
+            this.btnproducts.Click += new System.EventHandler(this.btnproducts_Click);
+            // 
+            // btnsuppliers
+            // 
+            this.btnsuppliers.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnsuppliers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsuppliers.Location = new System.Drawing.Point(55, 187);
+            this.btnsuppliers.Name = "btnsuppliers";
+            this.btnsuppliers.Size = new System.Drawing.Size(136, 49);
+            this.btnsuppliers.TabIndex = 3;
+            this.btnsuppliers.Text = "Suppliers";
+            this.btnsuppliers.UseVisualStyleBackColor = false;
+            // 
+            // btncustomers
+            // 
+            this.btncustomers.BackColor = System.Drawing.SystemColors.Menu;
+            this.btncustomers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncustomers.Location = new System.Drawing.Point(55, 259);
+            this.btncustomers.Name = "btncustomers";
+            this.btncustomers.Size = new System.Drawing.Size(136, 49);
+            this.btncustomers.TabIndex = 4;
+            this.btncustomers.Text = "Customers";
+            this.btncustomers.UseVisualStyleBackColor = false;
+            // 
+            // btnhome
+            // 
+            this.btnhome.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnhome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhome.Location = new System.Drawing.Point(55, 43);
+            this.btnhome.Name = "btnhome";
+            this.btnhome.Size = new System.Drawing.Size(136, 49);
+            this.btnhome.TabIndex = 1;
+            this.btnhome.Text = "Home";
+            this.btnhome.UseVisualStyleBackColor = false;
+            this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
+            // 
+            // panelhome
+            // 
+            this.panelhome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelhome.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panelhome.Location = new System.Drawing.Point(198, 0);
+            this.panelhome.Name = "panelhome";
+            this.panelhome.Size = new System.Drawing.Size(1011, 646);
+            this.panelhome.TabIndex = 1;
             // 
             // MainForm
             // 
