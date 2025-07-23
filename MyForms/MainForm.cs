@@ -22,7 +22,7 @@ namespace InventoryManagement
         private void btnhome_Click(object sender, EventArgs e)
         {
             panelhome.Controls.Clear();
-            Home_UC home_uc = new Home_UC();
+            Home_UC home_uc = new Home_UC(this);
             home_uc.Dock = DockStyle.Fill;
             panelhome.Controls.Add(home_uc);
         }

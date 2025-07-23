@@ -33,7 +33,7 @@ namespace InventoryManagement.UserControls
         {
             btn_save_modfiy_product.Enabled = false;
             btn_save_new_product.Enabled = false;
-            btn_cancel.Enabled = false;
+            btn_cancel_product.Enabled = false;
         }
 
         private void btn_add_cateory_Click(object sender, EventArgs e)

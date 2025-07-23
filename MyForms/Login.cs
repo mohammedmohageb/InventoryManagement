@@ -32,7 +32,7 @@ namespace InventoryManagement
                 main.btntransactions.Enabled = true;
                 main.btnreports.Enabled = true;
                 main.panelhome.Controls.Clear();
-                Home_UC h = new Home_UC();
+                Home_UC h = new Home_UC(main);
                 h.Dock = DockStyle.Fill;
                 main.panelhome.Controls.Add(h);
                 a = true;
