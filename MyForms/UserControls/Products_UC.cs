@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using InventoryManagement.InnerUserControls;
+using InventoryManagement.MyForms.InnerUserControls;
 
 namespace InventoryManagement.UserControls
 {
@@ -41,6 +42,14 @@ namespace InventoryManagement.UserControls
             AddCategory addcategory = new AddCategory(main);
             addcategory.Dock = DockStyle.Fill;
             main.panelhome.Controls.Add(addcategory);
+        }
+
+        private void btn_add_unit_Click(object sender, EventArgs e)
+        {
+            main.panelhome.Controls.Clear();
+            AddUnitUC addunit_us = new AddUnitUC(main);
+            addunit_us.Dock = DockStyle.Fill;
+            main.panelhome.Controls.Add(addunit_us);
         }
     }
 }

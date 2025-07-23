@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DGV_product = new System.Windows.Forms.DataGridView();
-            this.txt_searchproduct = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btn_add_product = new System.Windows.Forms.Button();
-            this.btn_save_modfiy_product = new System.Windows.Forms.Button();
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CategoryProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UnitProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnmodifyproduct = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btndeleteproduct = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.txt_searchproduct = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btn_add_product = new System.Windows.Forms.Button();
+            this.btn_save_modfiy_product = new System.Windows.Forms.Button();
             this.txt_product_name = new System.Windows.Forms.TextBox();
             this.com_category_product = new System.Windows.Forms.ComboBox();
             this.com_unit_product = new System.Windows.Forms.ComboBox();
@@ -82,6 +82,71 @@
             this.DGV_product.Size = new System.Drawing.Size(975, 277);
             this.DGV_product.TabIndex = 0;
             this.DGV_product.SelectionChanged += new System.EventHandler(this.DGV_product_SelectionChanged);
+            // 
+            // ProductID
+            // 
+            this.ProductID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ProductID.FillWeight = 30F;
+            this.ProductID.HeaderText = "ID";
+            this.ProductID.Name = "ProductID";
+            this.ProductID.ReadOnly = true;
+            // 
+            // ProductName
+            // 
+            this.ProductName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ProductName.FillWeight = 150F;
+            this.ProductName.HeaderText = "Product Name";
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            // 
+            // CategoryProduct
+            // 
+            this.CategoryProduct.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CategoryProduct.FillWeight = 150F;
+            this.CategoryProduct.HeaderText = "Category";
+            this.CategoryProduct.Name = "CategoryProduct";
+            this.CategoryProduct.ReadOnly = true;
+            this.CategoryProduct.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // UnitProduct
+            // 
+            this.UnitProduct.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.UnitProduct.HeaderText = "Unit";
+            this.UnitProduct.Name = "UnitProduct";
+            this.UnitProduct.ReadOnly = true;
+            this.UnitProduct.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // btnmodifyproduct
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.btnmodifyproduct.DefaultCellStyle = dataGridViewCellStyle1;
+            this.btnmodifyproduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnmodifyproduct.HeaderText = "";
+            this.btnmodifyproduct.Name = "btnmodifyproduct";
+            this.btnmodifyproduct.ReadOnly = true;
+            this.btnmodifyproduct.Text = "Modfiy";
+            this.btnmodifyproduct.UseColumnTextForButtonValue = true;
+            // 
+            // btndeleteproduct
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.btndeleteproduct.DefaultCellStyle = dataGridViewCellStyle2;
+            this.btndeleteproduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btndeleteproduct.HeaderText = "";
+            this.btndeleteproduct.Name = "btndeleteproduct";
+            this.btndeleteproduct.ReadOnly = true;
+            this.btndeleteproduct.Text = "Delete";
+            this.btndeleteproduct.UseColumnTextForButtonValue = true;
             // 
             // txt_searchproduct
             // 
@@ -142,71 +207,6 @@
             this.btn_save_modfiy_product.Text = "Save Modify";
             this.btn_save_modfiy_product.UseVisualStyleBackColor = false;
             this.btn_save_modfiy_product.Click += new System.EventHandler(this.btn_save_modfiy_product_Click);
-            // 
-            // ProductID
-            // 
-            this.ProductID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ProductID.FillWeight = 30F;
-            this.ProductID.HeaderText = "ID";
-            this.ProductID.Name = "ProductID";
-            this.ProductID.ReadOnly = true;
-            // 
-            // ProductName
-            // 
-            this.ProductName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ProductName.FillWeight = 150F;
-            this.ProductName.HeaderText = "Product Name";
-            this.ProductName.Name = "ProductName";
-            this.ProductName.ReadOnly = true;
-            // 
-            // CategoryProduct
-            // 
-            this.CategoryProduct.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CategoryProduct.FillWeight = 150F;
-            this.CategoryProduct.HeaderText = "Category";
-            this.CategoryProduct.Name = "CategoryProduct";
-            this.CategoryProduct.ReadOnly = true;
-            this.CategoryProduct.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // UnitProduct
-            // 
-            this.UnitProduct.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.UnitProduct.HeaderText = "Unit";
-            this.UnitProduct.Name = "UnitProduct";
-            this.UnitProduct.ReadOnly = true;
-            this.UnitProduct.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // btnmodifyproduct
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            this.btnmodifyproduct.DefaultCellStyle = dataGridViewCellStyle3;
-            this.btnmodifyproduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnmodifyproduct.HeaderText = "";
-            this.btnmodifyproduct.Name = "btnmodifyproduct";
-            this.btnmodifyproduct.ReadOnly = true;
-            this.btnmodifyproduct.Text = "Modfiy";
-            this.btnmodifyproduct.UseColumnTextForButtonValue = true;
-            // 
-            // btndeleteproduct
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.btndeleteproduct.DefaultCellStyle = dataGridViewCellStyle4;
-            this.btndeleteproduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btndeleteproduct.HeaderText = "";
-            this.btndeleteproduct.Name = "btndeleteproduct";
-            this.btndeleteproduct.ReadOnly = true;
-            this.btndeleteproduct.Text = "Delete";
-            this.btndeleteproduct.UseColumnTextForButtonValue = true;
             // 
             // txt_product_name
             // 
@@ -298,6 +298,7 @@
             this.btn_add_unit.TabIndex = 12;
             this.btn_add_unit.Text = "Add Unit";
             this.btn_add_unit.UseVisualStyleBackColor = false;
+            this.btn_add_unit.Click += new System.EventHandler(this.btn_add_unit_Click);
             // 
             // btn_save_new_product
             // 
