@@ -11,3 +11,4 @@ C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\Invento
 C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Login.resources
 C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.UserControls.Products_UC.resources
 C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.InnerUserControls.AddCategory.resources
+C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.MyForms.InnerUserControls.AddUnitUC.resources
