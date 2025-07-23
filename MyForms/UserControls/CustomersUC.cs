@@ -12,9 +12,10 @@ namespace InventoryManagement.MyForms.UserControls
 {
     public partial class CustomersUC : UserControl
     {
-        public CustomersUC()
+        public MainForm main;
+        public CustomersUC(MainForm main)
         {
             InitializeComponent();
-        }
+            this.main = main;        }
     }
 }

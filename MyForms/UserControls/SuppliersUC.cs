@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace InventoryManagement.MyForms.UserControls
 {
+
     public partial class SuppliersUC : UserControl
     {
-        public SuppliersUC()
+        public MainForm main;
+        public SuppliersUC(MainForm main)
         {
             InitializeComponent();
+            this.main = main;
         }
     }
 }

@@ -38,9 +38,9 @@ namespace InventoryManagement.UserControls
         private void btn_add_cateory_Click(object sender, EventArgs e)
         {
             main.panelhome.Controls.Clear();
-            AddCategory products_us = new AddCategory(main);
-            products_us.Dock = DockStyle.Fill;
-            main.panelhome.Controls.Add(products_us);
+            AddCategory addcategory = new AddCategory(main);
+            addcategory.Dock = DockStyle.Fill;
+            main.panelhome.Controls.Add(addcategory);
         }
     }
 }
