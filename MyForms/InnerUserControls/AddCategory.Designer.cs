@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_category_name = new System.Windows.Forms.TextBox();
@@ -37,15 +37,15 @@
             this.btn_save_category = new System.Windows.Forms.Button();
             this.btn_cancel_category = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_add_catecory = new System.Windows.Forms.Button();
             this.btn_back_to_product = new System.Windows.Forms.Button();
-            this.CategoryID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnmodifycategory = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.btndeletecategory = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_search_category = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btn_add_catecory = new System.Windows.Forms.Button();
+            this.Category_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnmodifycategory = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btndeletecategory = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_category)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -79,6 +79,7 @@
             this.txt_category_name.Name = "txt_category_name";
             this.txt_category_name.Size = new System.Drawing.Size(614, 38);
             this.txt_category_name.TabIndex = 2;
+            this.txt_category_name.TextChanged += new System.EventHandler(this.txt_category_name_TextChanged);
             // 
             // DGV_category
             // 
@@ -89,8 +90,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DGV_category.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_category.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CategoryID,
-            this.categoryname,
+            this.Category_ID,
+            this.Category_Name,
             this.btnmodifycategory,
             this.btndeletecategory});
             this.DGV_category.Location = new System.Drawing.Point(18, 355);
@@ -102,6 +103,7 @@
             this.DGV_category.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGV_category.Size = new System.Drawing.Size(975, 277);
             this.DGV_category.TabIndex = 3;
+            this.DGV_category.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_category_CellContentClick);
             // 
             // btn_save_category
             // 
@@ -116,6 +118,7 @@
             this.btn_save_category.TabIndex = 4;
             this.btn_save_category.Text = "Save";
             this.btn_save_category.UseVisualStyleBackColor = false;
+            this.btn_save_category.Click += new System.EventHandler(this.btn_save_category_Click);
             // 
             // btn_cancel_category
             // 
@@ -130,6 +133,7 @@
             this.btn_cancel_category.TabIndex = 5;
             this.btn_cancel_category.Text = "Cancel";
             this.btn_cancel_category.UseVisualStyleBackColor = false;
+            this.btn_cancel_category.Click += new System.EventHandler(this.btn_cancel_category_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -149,6 +153,21 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(538, 43);
             this.tableLayoutPanel1.TabIndex = 16;
             // 
+            // btn_add_catecory
+            // 
+            this.btn_add_catecory.BackColor = System.Drawing.Color.Green;
+            this.btn_add_catecory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_add_catecory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_add_catecory.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_catecory.ForeColor = System.Drawing.Color.White;
+            this.btn_add_catecory.Location = new System.Drawing.Point(3, 3);
+            this.btn_add_catecory.Name = "btn_add_catecory";
+            this.btn_add_catecory.Size = new System.Drawing.Size(173, 37);
+            this.btn_add_catecory.TabIndex = 6;
+            this.btn_add_catecory.Text = "Add";
+            this.btn_add_catecory.UseVisualStyleBackColor = false;
+            this.btn_add_catecory.Click += new System.EventHandler(this.btn_add_catecory_Click);
+            // 
             // btn_back_to_product
             // 
             this.btn_back_to_product.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -164,64 +183,12 @@
             this.btn_back_to_product.UseVisualStyleBackColor = false;
             this.btn_back_to_product.Click += new System.EventHandler(this.btn_back_to_product_Click);
             // 
-            // CategoryID
-            // 
-            this.CategoryID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CategoryID.FillWeight = 10F;
-            this.CategoryID.HeaderText = "ID";
-            this.CategoryID.Name = "CategoryID";
-            this.CategoryID.ReadOnly = true;
-            // 
-            // categoryname
-            // 
-            this.categoryname.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.categoryname.FillWeight = 150F;
-            this.categoryname.HeaderText = "Category Name";
-            this.categoryname.Name = "categoryname";
-            this.categoryname.ReadOnly = true;
-            // 
-            // btnmodifycategory
-            // 
-            this.btnmodifycategory.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            this.btnmodifycategory.DefaultCellStyle = dataGridViewCellStyle3;
-            this.btnmodifycategory.FillWeight = 50F;
-            this.btnmodifycategory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnmodifycategory.HeaderText = "";
-            this.btnmodifycategory.Name = "btnmodifycategory";
-            this.btnmodifycategory.ReadOnly = true;
-            this.btnmodifycategory.Text = "Modfiy";
-            this.btnmodifycategory.UseColumnTextForButtonValue = true;
-            // 
-            // btndeletecategory
-            // 
-            this.btndeletecategory.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.btndeletecategory.DefaultCellStyle = dataGridViewCellStyle4;
-            this.btndeletecategory.FillWeight = 50F;
-            this.btndeletecategory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btndeletecategory.HeaderText = "";
-            this.btndeletecategory.Name = "btndeletecategory";
-            this.btndeletecategory.ReadOnly = true;
-            this.btndeletecategory.Text = "Delete";
-            this.btndeletecategory.UseColumnTextForButtonValue = true;
-            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(853, 297);
+            this.label3.Location = new System.Drawing.Point(853, 300);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 51);
             this.label3.TabIndex = 27;
@@ -232,10 +199,11 @@
             this.txt_search_category.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_search_category.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_search_category.Location = new System.Drawing.Point(354, 309);
+            this.txt_search_category.Location = new System.Drawing.Point(354, 312);
             this.txt_search_category.Name = "txt_search_category";
             this.txt_search_category.Size = new System.Drawing.Size(493, 38);
             this.txt_search_category.TabIndex = 26;
+            this.txt_search_category.TextChanged += new System.EventHandler(this.txt_search_category_TextChanged);
             // 
             // label4
             // 
@@ -247,19 +215,61 @@
             this.label4.TabIndex = 28;
             this.label4.Text = "Category List";
             // 
-            // btn_add_catecory
+            // Category_ID
             // 
-            this.btn_add_catecory.BackColor = System.Drawing.Color.Green;
-            this.btn_add_catecory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_add_catecory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_add_catecory.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_catecory.ForeColor = System.Drawing.Color.White;
-            this.btn_add_catecory.Location = new System.Drawing.Point(3, 3);
-            this.btn_add_catecory.Name = "btn_add_catecory";
-            this.btn_add_catecory.Size = new System.Drawing.Size(173, 37);
-            this.btn_add_catecory.TabIndex = 6;
-            this.btn_add_catecory.Text = "Add";
-            this.btn_add_catecory.UseVisualStyleBackColor = false;
+            this.Category_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Category_ID.DataPropertyName = "Category_ID";
+            this.Category_ID.FillWeight = 10F;
+            this.Category_ID.HeaderText = "ID";
+            this.Category_ID.Name = "Category_ID";
+            this.Category_ID.ReadOnly = true;
+            // 
+            // Category_Name
+            // 
+            this.Category_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Category_Name.DataPropertyName = "Category_Name";
+            this.Category_Name.FillWeight = 150F;
+            this.Category_Name.HeaderText = "Category Name";
+            this.Category_Name.Name = "Category_Name";
+            this.Category_Name.ReadOnly = true;
+            // 
+            // btnmodifycategory
+            // 
+            this.btnmodifycategory.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.btnmodifycategory.DataPropertyName = "btnmodifycategory";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
+            this.btnmodifycategory.DefaultCellStyle = dataGridViewCellStyle15;
+            this.btnmodifycategory.FillWeight = 50F;
+            this.btnmodifycategory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnmodifycategory.HeaderText = "";
+            this.btnmodifycategory.Name = "btnmodifycategory";
+            this.btnmodifycategory.ReadOnly = true;
+            this.btnmodifycategory.Text = "Modfiy";
+            this.btnmodifycategory.UseColumnTextForButtonValue = true;
+            // 
+            // btndeletecategory
+            // 
+            this.btndeletecategory.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.btndeletecategory.DataPropertyName = "btndeletecategory";
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
+            this.btndeletecategory.DefaultCellStyle = dataGridViewCellStyle16;
+            this.btndeletecategory.FillWeight = 50F;
+            this.btndeletecategory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btndeletecategory.HeaderText = "";
+            this.btndeletecategory.Name = "btndeletecategory";
+            this.btndeletecategory.ReadOnly = true;
+            this.btndeletecategory.Text = "Delete";
+            this.btndeletecategory.UseColumnTextForButtonValue = true;
             // 
             // AddCategory
             // 
@@ -294,13 +304,13 @@
         private System.Windows.Forms.Button btn_cancel_category;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btn_back_to_product;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CategoryID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoryname;
-        private System.Windows.Forms.DataGridViewButtonColumn btnmodifycategory;
-        private System.Windows.Forms.DataGridViewButtonColumn btndeletecategory;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_search_category;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_add_catecory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Category_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Category_Name;
+        private System.Windows.Forms.DataGridViewButtonColumn btnmodifycategory;
+        private System.Windows.Forms.DataGridViewButtonColumn btndeletecategory;
     }
 }
