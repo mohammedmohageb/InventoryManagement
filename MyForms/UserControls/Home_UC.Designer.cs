@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pic_transactions = new System.Windows.Forms.PictureBox();
+            this.pic_reports = new System.Windows.Forms.PictureBox();
+            this.pic_customers = new System.Windows.Forms.PictureBox();
+            this.pic_product = new System.Windows.Forms.PictureBox();
+            this.pic_suppliers = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_transactions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_reports)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_customers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_product)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_suppliers)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -52,11 +52,11 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox11, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox10, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox9, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox8, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pic_transactions, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pic_reports, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pic_customers, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pic_product, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pic_suppliers, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(54, 38);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -65,60 +65,65 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(870, 573);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // pictureBox11
+            // pic_transactions
             // 
-            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox11.Image = global::InventoryManagement.Properties.Resources._4;
-            this.pictureBox11.Location = new System.Drawing.Point(3, 289);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(284, 281);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 4;
-            this.pictureBox11.TabStop = false;
+            this.pic_transactions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pic_transactions.Image = global::InventoryManagement.Properties.Resources._4;
+            this.pic_transactions.Location = new System.Drawing.Point(3, 289);
+            this.pic_transactions.Name = "pic_transactions";
+            this.pic_transactions.Size = new System.Drawing.Size(284, 281);
+            this.pic_transactions.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_transactions.TabIndex = 4;
+            this.pic_transactions.TabStop = false;
+            this.pic_transactions.Click += new System.EventHandler(this.pic_transactions_Click);
             // 
-            // pictureBox10
+            // pic_reports
             // 
-            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox10.Image = global::InventoryManagement.Properties.Resources._5;
-            this.pictureBox10.Location = new System.Drawing.Point(293, 289);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(284, 281);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 3;
-            this.pictureBox10.TabStop = false;
+            this.pic_reports.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pic_reports.Image = global::InventoryManagement.Properties.Resources._5;
+            this.pic_reports.Location = new System.Drawing.Point(293, 289);
+            this.pic_reports.Name = "pic_reports";
+            this.pic_reports.Size = new System.Drawing.Size(284, 281);
+            this.pic_reports.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_reports.TabIndex = 3;
+            this.pic_reports.TabStop = false;
+            this.pic_reports.Click += new System.EventHandler(this.pic_reports_Click);
             // 
-            // pictureBox9
+            // pic_customers
             // 
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Image = global::InventoryManagement.Properties.Resources._3;
-            this.pictureBox9.Location = new System.Drawing.Point(583, 3);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(284, 280);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 2;
-            this.pictureBox9.TabStop = false;
+            this.pic_customers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pic_customers.Image = global::InventoryManagement.Properties.Resources._3;
+            this.pic_customers.Location = new System.Drawing.Point(583, 3);
+            this.pic_customers.Name = "pic_customers";
+            this.pic_customers.Size = new System.Drawing.Size(284, 280);
+            this.pic_customers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_customers.TabIndex = 2;
+            this.pic_customers.TabStop = false;
+            this.pic_customers.Click += new System.EventHandler(this.pic_customers_Click);
             // 
-            // pictureBox7
+            // pic_product
             // 
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Image = global::InventoryManagement.Properties.Resources._1;
-            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(284, 280);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
+            this.pic_product.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pic_product.Image = global::InventoryManagement.Properties.Resources._1;
+            this.pic_product.Location = new System.Drawing.Point(3, 3);
+            this.pic_product.Name = "pic_product";
+            this.pic_product.Size = new System.Drawing.Size(284, 280);
+            this.pic_product.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_product.TabIndex = 0;
+            this.pic_product.TabStop = false;
+            this.pic_product.Click += new System.EventHandler(this.pic_product_Click);
             // 
-            // pictureBox8
+            // pic_suppliers
             // 
-            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox8.Image = global::InventoryManagement.Properties.Resources._2;
-            this.pictureBox8.Location = new System.Drawing.Point(293, 3);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(284, 280);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 1;
-            this.pictureBox8.TabStop = false;
+            this.pic_suppliers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pic_suppliers.Image = global::InventoryManagement.Properties.Resources._2;
+            this.pic_suppliers.Location = new System.Drawing.Point(293, 3);
+            this.pic_suppliers.Name = "pic_suppliers";
+            this.pic_suppliers.Size = new System.Drawing.Size(284, 280);
+            this.pic_suppliers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_suppliers.TabIndex = 1;
+            this.pic_suppliers.TabStop = false;
+            this.pic_suppliers.Click += new System.EventHandler(this.pic_suppliers_Click);
             // 
             // Home_UC
             // 
@@ -127,13 +132,12 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Home_UC";
             this.Size = new System.Drawing.Size(1011, 646);
-            this.Load += new System.EventHandler(this.Home_UC_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_transactions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_reports)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_customers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_product)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_suppliers)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -141,10 +145,10 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pic_transactions;
+        private System.Windows.Forms.PictureBox pic_reports;
+        private System.Windows.Forms.PictureBox pic_customers;
+        private System.Windows.Forms.PictureBox pic_product;
+        private System.Windows.Forms.PictureBox pic_suppliers;
     }
 }
