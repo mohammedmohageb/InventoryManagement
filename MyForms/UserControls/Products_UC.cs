@@ -34,6 +34,12 @@ namespace InventoryManagement.UserControls
             btn_save_modfiy_product.Enabled = false;
             btn_save_new_product.Enabled = false;
             btn_cancel_product.Enabled = false;
+            txt_product_name.Enabled = false;
+            com_category_product.Enabled = false;
+            com_unit_product.Enabled = false;
+            txt_product_name.Clear();
+            com_category_product.SelectedIndex = -1;
+            com_unit_product.SelectedIndex = -1;
         }
 
         private void btn_add_cateory_Click(object sender, EventArgs e)
@@ -50,6 +56,21 @@ namespace InventoryManagement.UserControls
             AddUnitUC addunit_us = new AddUnitUC(main);
             addunit_us.Dock = DockStyle.Fill;
             main.panelhome.Controls.Add(addunit_us);
+        }
+
+        private void btn_add_product_Click(object sender, EventArgs e)
+        {
+            btn_save_new_product.Enabled = true;
+            btn_cancel_product.Enabled = true;
+            txt_product_name.Enabled = true;
+            com_category_product.Enabled = true;
+            com_unit_product.Enabled = true;
+            txt_product_name.Focus();
+        }
+
+        private void btn_cancel_product_Click(object sender, EventArgs e)
+        {
+            Products_UC_Load(sender, e);
         }
     }
 }

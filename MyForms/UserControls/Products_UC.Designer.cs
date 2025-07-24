@@ -59,7 +59,6 @@
             // 
             // DGV_product
             // 
-            this.DGV_product.AllowUserToAddRows = false;
             this.DGV_product.AllowUserToDeleteRows = false;
             this.DGV_product.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -75,7 +74,6 @@
             this.DGV_product.Location = new System.Drawing.Point(16, 358);
             this.DGV_product.MultiSelect = false;
             this.DGV_product.Name = "DGV_product";
-            this.DGV_product.ReadOnly = true;
             this.DGV_product.RowHeadersVisible = false;
             this.DGV_product.RowTemplate.Height = 24;
             this.DGV_product.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -127,6 +125,7 @@
             this.btn_add_product.TabIndex = 0;
             this.btn_add_product.Text = "Add Product";
             this.btn_add_product.UseVisualStyleBackColor = false;
+            this.btn_add_product.Click += new System.EventHandler(this.btn_add_product_Click);
             // 
             // btn_save_modfiy_product
             // 
@@ -157,6 +156,7 @@
             // 
             this.com_category_product.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.com_category_product.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.com_category_product.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.com_category_product.FormattingEnabled = true;
             this.com_category_product.Location = new System.Drawing.Point(227, 93);
@@ -168,6 +168,7 @@
             // 
             this.com_unit_product.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.com_unit_product.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.com_unit_product.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.com_unit_product.FormattingEnabled = true;
             this.com_unit_product.Location = new System.Drawing.Point(227, 160);
@@ -262,6 +263,7 @@
             this.btn_cancel_product.TabIndex = 14;
             this.btn_cancel_product.Text = "Cancel";
             this.btn_cancel_product.UseVisualStyleBackColor = false;
+            this.btn_cancel_product.Click += new System.EventHandler(this.btn_cancel_product_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -297,7 +299,6 @@
             this.ProductName.FillWeight = 150F;
             this.ProductName.HeaderText = "Product Name";
             this.ProductName.Name = "ProductName";
-            this.ProductName.ReadOnly = true;
             // 
             // CategoryProduct
             // 
@@ -305,16 +306,12 @@
             this.CategoryProduct.FillWeight = 150F;
             this.CategoryProduct.HeaderText = "Category";
             this.CategoryProduct.Name = "CategoryProduct";
-            this.CategoryProduct.ReadOnly = true;
-            this.CategoryProduct.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // UnitProduct
             // 
             this.UnitProduct.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.UnitProduct.HeaderText = "Unit";
             this.UnitProduct.Name = "UnitProduct";
-            this.UnitProduct.ReadOnly = true;
-            this.UnitProduct.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // btnmodifyproduct
             // 
