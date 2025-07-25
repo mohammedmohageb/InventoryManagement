@@ -100,6 +100,26 @@ namespace InventoryManagement.DAL
             }
             return dt;
         }
+        public bool IsCategoryUsedInItems(int categoryId)
+        {
+            bool IsUsed = false;
+            string query = "SELECT COUNT(*) FROM Items WHERE Category_ID = @id";
+            SqlConnection conn = DBConnection.GetConnectionString();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@id", categoryId);
 
+            try
+            {
+                conn.Open();
+                int count = (int)cmd.ExecuteScalar();
+                IsUsed = count > 0;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return IsUsed;
+        }
     }
 }
