@@ -5,17 +5,16 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InventoryManagement.ConnectionString;
 
 namespace InventoryManagement.DAL
 {
     class CategoriesDAL
     {
-        private string connectionString = "Data Source=DESKTOP-5OFF8V5\\SQLEXPRESS;Initial Catalog=Inventory_DB;Integrated Security=True";
-
         public DataTable GetAllCategories()
         {
             DataTable dt = new DataTable();
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = DBConnection.GetConnectionString();
             try
             {
                 conn.Open();
@@ -32,7 +31,7 @@ namespace InventoryManagement.DAL
 
         public void InsertCategory(string categoryName)
         {
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = DBConnection.GetConnectionString();
             try
             {
                 conn.Open();
@@ -49,7 +48,7 @@ namespace InventoryManagement.DAL
 
         public void UpdateCategory(int categoryId, string categoryName)
         {
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = DBConnection.GetConnectionString();
             try
             {
                 conn.Open();
@@ -67,7 +66,7 @@ namespace InventoryManagement.DAL
 
         public void DeleteCategory(int categoryId)
         {
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = DBConnection.GetConnectionString();
             try
             {
                 conn.Open();
@@ -85,7 +84,7 @@ namespace InventoryManagement.DAL
         public DataTable SearchCategory(string searchText)
         {
             DataTable dt = new DataTable();
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = DBConnection.GetConnectionString();
             try
             {
                 conn.Open();
