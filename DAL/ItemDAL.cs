@@ -5,17 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using InventoryManagement.ConnectionString;
 
 namespace InventoryManagement.DAL
 {
     class ItemDAL
     {
-        private string connectionString = "Data Source=DESKTOP-5OFF8V5\\SQLEXPRESS;Initial Catalog=Inventory_DB;Integrated Security=True";
-
         public DataTable GetAllItems()
         {
             DataTable dt = new DataTable();
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = DBConnection.GetConnectionString();
             try
             {
                 conn.Open();
@@ -27,9 +26,9 @@ namespace InventoryManagement.DAL
                         c.Category_Name, 
                         u.Unit_ID,
                         u.Unit_Name
-                    FROM items i
-                    JOIN Categories c ON i.Category_ID = c.Category_ID
-                    JOIN Units u ON i.Unit_ID = u.Unit_ID";
+                        FROM items i
+                        JOIN Categories c ON i.Category_ID = c.Category_ID
+                        JOIN Units u ON i.Unit_ID = u.Unit_ID";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 adapter.Fill(dt);
@@ -43,7 +42,7 @@ namespace InventoryManagement.DAL
 
         public void AddItem(string itemId, string itemName, int categoryId, int unitId)
         {
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = DBConnection.GetConnectionString();
             try
             {
                 conn.Open();
@@ -64,7 +63,7 @@ namespace InventoryManagement.DAL
 
         public void UpdateItem(String itemId, string itemName, int categoryId, int unitId)
         {
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = DBConnection.GetConnectionString();
             try
             {
                 conn.Open();
@@ -84,7 +83,7 @@ namespace InventoryManagement.DAL
 
         public void DeleteItem(string itemId)
         {
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = DBConnection.GetConnectionString();
             try
             {
                 conn.Open();
@@ -102,7 +101,7 @@ namespace InventoryManagement.DAL
         public DataTable SearchItems(string searchText)
         {
             DataTable dt = new DataTable();
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = DBConnection.GetConnectionString();
             try
             {
                 conn.Open();
@@ -137,7 +136,7 @@ namespace InventoryManagement.DAL
         public DataTable GetAllCategories()
         {
             DataTable dt = new DataTable();
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = DBConnection.GetConnectionString();
             try
             {
                 conn.Open();
@@ -155,7 +154,7 @@ namespace InventoryManagement.DAL
         public DataTable GetAllUnits()
         {
             DataTable dt = new DataTable();
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = DBConnection.GetConnectionString();
             try
             {
                 conn.Open();
