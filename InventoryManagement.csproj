@@ -53,9 +53,11 @@
   <ItemGroup>
     <Compile Include="BLL\CategoriesBLL.cs" />
     <Compile Include="BLL\ItemBLL.cs" />
+    <Compile Include="BLL\UnitsBLL.cs" />
     <Compile Include="ConnectionString\DBConnection.cs" />
     <Compile Include="DAL\CategoriesDAL.cs" />
     <Compile Include="DAL\ItemDAL.cs" />
+    <Compile Include="DAL\UnitsDAL.cs" />
     <Compile Include="MyForms\InnerUserControls\AddCategory.cs">
       <SubType>UserControl</SubType>
     </Compile>
