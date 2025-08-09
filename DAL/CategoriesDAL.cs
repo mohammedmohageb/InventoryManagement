@@ -11,6 +11,8 @@ namespace InventoryManagement.DAL
 {
     class CategoriesDAL
     {
+        private string connectionString = "Data Source=DESKTOP-5OFF8V5\\SQLEXPRESS;Initial Catalog=Inventory_DB;Integrated Security=True";
+
         public DataTable GetAllCategories()
         {
             DataTable dt = new DataTable();

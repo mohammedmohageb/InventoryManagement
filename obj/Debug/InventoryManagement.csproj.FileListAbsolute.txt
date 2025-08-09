@@ -16,3 +16,23 @@ C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\Invento
 C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.MyForms.UserControls.ReportsUC.resources
 C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.MyForms.UserControls.SuppliersUC.resources
 C:\Users\Ahmed\documents\visual studio 2015\Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.MyForms.UserControls.TransactionUC.resources
+F:\Programming_Languages\InventoryManagement\bin\Debug\InventoryManagement.exe.config
+F:\Programming_Languages\InventoryManagement\bin\Debug\InventoryManagement.exe
+F:\Programming_Languages\InventoryManagement\bin\Debug\InventoryManagement.pdb
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.csproj.AssemblyReference.cache
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.csproj.SuggestedBindingRedirects.cache
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.InnerUserControls.AddCategory.resources
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.MyForms.InnerUserControls.AddUnitUC.resources
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.Login.resources
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.MainForm.resources
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.MyForms.UserControls.CustomersUC.resources
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.MyForms.UserControls.ReportsUC.resources
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.MyForms.UserControls.SuppliersUC.resources
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.MyForms.UserControls.TransactionUC.resources
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.Properties.Resources.resources
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.UserControls.Home_UC.resources
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.UserControls.Products_UC.resources
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.csproj.GenerateResource.cache
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.csproj.CoreCompileInputs.cache
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.exe
+F:\Programming_Languages\InventoryManagement\obj\Debug\InventoryManagement.pdb
